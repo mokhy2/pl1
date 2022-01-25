@@ -1,5 +1,3 @@
-import { MarkerClusterer } from "@googlemaps/markerclusterer";
-
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 3,
