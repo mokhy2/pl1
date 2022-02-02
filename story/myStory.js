@@ -4,7 +4,7 @@ function initMap() {
     center: { lat: 44.17, lng: -78.609 },
   });
 
-  var convAreas = [
+  const convAreas = [
     [{ lat: 43.8519712, lng: -78.9583349 }, "Lynde Shores Conservation Area"],
     [{ lat: 43.9392489, lng: -78.9811295}, "Heber Down Conservation Area"],
     [{ lat: 43.85359, lng: -78.898358 }, "Thicksons Woods"],
