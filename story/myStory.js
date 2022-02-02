@@ -6,7 +6,7 @@ function initMap() {
 
   const convAreas = [
     [{ lat: 43.8519712, lng: -78.9583349 }, "Lynde Shores Conservation Area"],
-    [{ lat: 43.9392489, lng: -78.9811295}, "Heber Down Conservation Area"],
+    [{ lat: 43.9392489, lng: -78.9811295 }, "Heber Down Conservation Area"],
     [{ lat: 43.85359, lng: -78.898358 }, "Thicksons Woods"],
     [{ lat: 44.009224, lng: -79.070157 }, "?"],
     [{ lat: 44.002296, lng: -78.774953 }, "?"],
@@ -18,20 +18,11 @@ function initMap() {
   const infoWindow = new google.maps.InfoWindow();
 
   // Create the markers.
-  for (i = 0, convAreas.length; i++;) {
+  for (i = 0, convAreas.length; i++; ) {
     const marker = new google.maps.Marker({
-      position: [i][1],
       map,
-      title: i+1+"."+" " + [i][2],
-      label: i+1,
-      optimized: false,
-    });
-
-    // Add a click listener for each marker, and set up the info window.
-    marker.addListener("click", () => {
-      infoWindow.close();
-      infoWindow.setContent(marker.getTitle());
-      infoWindow.open(marker.getMap(), marker);
+      animation: google.maps.Animation.DROP,
+      position: [i][1],
     });
   }
 }
