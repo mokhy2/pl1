@@ -2,7 +2,7 @@ function initMap() {
   var markers;
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
-        center: { lat: 44.170, lng: 78.609 },
+        center: { lat: 44.170, lng: -78.609 },
       });
 
     marker = google.maps.Marker({
