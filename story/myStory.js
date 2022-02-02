@@ -1,16 +1,16 @@
 function initMap() {
-  var markers;
+  var marker;
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
         center: { lat: 44.170, lng: -78.609 },
       });
 
-    marker = google.maps.Marker({
-      map,
-      animation: google.maps.Animation.DROP,
-      position: convMarkers,
+    marker = convMarkers.map(() => {
+      return new google.maps.Marker({
+        position: location,
+      });
     });
-  markers.addListener("click", toggleBounce);
+  marker.addListener("click", toggleBounce);
 }
 
 function toggleBounce() {
