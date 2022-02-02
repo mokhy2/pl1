@@ -18,13 +18,12 @@ function initMap() {
   var infoWindow = new google.maps.InfoWindow();
 
   // Create the markers.
-  for (m = 0; convAreas.length; m++){
-    var marker = new google.maps.Marker({
+  convAreas.forEach(([position, title], i) => {
+    const marker = new google.maps.Marker({
+      position,
       map,
-      animation: google.maps.Animation.DROP,
-      position: [i][1-2],
-      title: [i][4],
-      label: [m],
+      title: `${i + 1}. ${title}`,
+      label: `${i + 1}`,
       optimized: false,
     });
 
@@ -34,5 +33,5 @@ function initMap() {
       infoWindow.setContent(marker.getTitle());
       infoWindow.open(marker.getMap(), marker);
     });
-  };
+  });
 }
