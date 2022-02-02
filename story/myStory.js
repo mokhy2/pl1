@@ -15,7 +15,7 @@ function initMap() {
     [{ lat: 44.321988, lng: -78.261056 }, "Harold Town Conservation Area"],
   ];
   // Create an info window to share between markers.
-  var infoWindow = new google.maps.InfoWindow();
+  const infoWindow = new google.maps.InfoWindow();
 
   // Create the markers.
   convMarkers.forEach(([position, title], i) => {
