@@ -9,7 +9,7 @@ function initMap() {
       return new google.maps.Marker({
         map,
         animation: google.maps.Animation.DROP,
-        position: location,
+        position: convMarkers,
       });
     });
   marker.addListener("click", toggleBounce);
