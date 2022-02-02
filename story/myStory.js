@@ -22,7 +22,7 @@ function initMap() {
     const marker = new google.maps.Marker({
       map,
       animation: google.maps.Animation.DROP,
-      position: [i][1],
+      position: [i][i][1],
     });
   }
 }
