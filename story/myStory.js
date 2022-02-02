@@ -17,10 +17,21 @@ function initMap() {
   // Create an info window to share between markers.
   var infoWindow = new google.maps.InfoWindow();
 
-  // // Create the markers.
-  convAreas.map((location) => {
-    return new google.maps.Marker({
-      position: location
+  // Create the markers.
+  convMarkers.forEach(([position, title], i) => {
+    const marker = new google.maps.Marker({
+      position,
+      map,
+      title: `${i + 1}. ${title}`,
+      label: `${i + 1}`,
+      optimized: false,
+    });
+
+    // Add a click listener for each marker, and set up the info window.
+    marker.addListener("click", () => {
+      infoWindow.close();
+      infoWindow.setContent(marker.getTitle());
+      infoWindow.open(marker.getMap(), marker);
     });
   });
 }
