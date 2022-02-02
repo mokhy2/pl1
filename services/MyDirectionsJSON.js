@@ -1,5 +1,3 @@
-https://maps.googleapis.com/maps/api/directions/json?origin=place_id:ChIJG6MpQO4d1YkRXZHiqjIBw-Y&destination=place_id:ChIJk4jbBYqWuEwRAzro8GMtxY8&alternatives=true&departure_time=1643942400&traffic_model=best_guess&units=metric&waypoints=place_id:ChIJcXo0k9Xf1IkRXQacW4As4TQ%7Cplace_id:ChIJ30XmQabR1IkR6kOAU_Q9tvU%7Cplace_id:ChIJxY1C2hvS1IkRXlGn_M4-oFo&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
-
 {
    "geocoded_waypoints" : [
       {
