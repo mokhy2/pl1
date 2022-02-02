@@ -5,11 +5,11 @@ function initMap() {
         center: { lat: 44.170, lng: -78.609 },
       });
 
-    marker = convMarkers.map(() => {
+    marker = convMarkers.map((locations) => {
       return new google.maps.Marker({
         map,
         animation: google.maps.Animation.DROP,
-        position: convMarkers,
+        position: locations,
       });
     });
   marker.addListener("click", toggleBounce);
