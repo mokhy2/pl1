@@ -35,8 +35,8 @@ function initMap() {
           infoWindow.setContent(marker.getTitle());
           infoWindow.open(marker.getMap(), marker);
         });
-        marker.addListener("click", toggleBounce);
       });
+      marker.addListener("click", toggleBounce);
 }
 
 function toggleBounce() {
