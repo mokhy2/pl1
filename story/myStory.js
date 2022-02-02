@@ -4,7 +4,7 @@ function initMap() {
         center: { lat: 44.170, lng: -78.609 },
       });
       
-      const convAreas = [
+      var convAreas = [
         [{ lat: 43.8519712, lng: -78.9583349 }, "Lynde Shores Conservation Area"],
         [{ lat: 43.9392489, lng: -78.9811295 }, "Heber Down Conservation Area"],
         [{ lat: 43.853590, lng: -78.898358 }, "Thicksons Woods"],
@@ -15,11 +15,11 @@ function initMap() {
         [{ lat: 44.321988, lng: -78.261056 }, "Harold Town Conservation Area"],
       ];
       // Create an info window to share between markers.
-      const infoWindow = new google.maps.InfoWindow();
+      var infoWindow = new google.maps.InfoWindow();
     
       // Create the markers.
       convAreas.forEach(([position, title], i) => {
-        const marker = new google.maps.Marker({
+        var marker = new google.maps.Marker({
           position,
           map,
           animation: google.maps.Animation.DROP,
