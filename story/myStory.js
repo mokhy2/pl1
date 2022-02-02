@@ -7,6 +7,8 @@ function initMap() {
 
     marker = convMarkers.map(() => {
       return new google.maps.Marker({
+        map,
+        animation: google.maps.Animation.DROP,
         position: location,
       });
     });
