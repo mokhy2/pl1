@@ -18,10 +18,9 @@ function initMap() {
   var infoWindow = new google.maps.InfoWindow();
 
   // // Create the markers.
-  convAreas.map((location, i) => {
+  convAreas.map((location) => {
     return new google.maps.Marker({
-      position: location,
-      label: labels[i % labels.length],
+      position: location
     });
   });
 }
