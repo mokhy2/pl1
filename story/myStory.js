@@ -5,14 +5,14 @@ function initMap() {
   });
 
   var convAreas = [
-    { lat: 43.8519712, lng: -78.9583349 },
-    { lat: 43.9392489, lng: -78.9811295 },
-    { lat: 43.85359, lng: -78.898358 },
-    { lat: 44.009224, lng: -79.070157 },
-    { lat: 44.002296, lng: -78.774953 },
-    { lat: 43.9002, lng: -79.065092 },
-    { lat: 44.297645, lng: -78.270045 },
-    { lat: 44.321988, lng: -78.261056 },
+    [{ lat: 43.8519712, lng: -78.9583349 }, "Lynde Shores Conservation Area"],
+    [{ lat: 43.9392489, lng: -78.9811295}, "Heber Down Conservation Area"],
+    [{ lat: 43.85359, lng: -78.898358 }, "Thicksons Woods"],
+    [{ lat: 44.009224, lng: -79.070157 }, "?"],
+    [{ lat: 44.002296, lng: -78.774953 }, "?"],
+    [{ lat: 43.9002, lng: -79.065092 }, "?"],
+    [{ lat: 44.297645, lng: -78.270045 }, "Mark S. Burnham Provincial Park"],
+    [{ lat: 44.321988, lng: -78.261056 }, "Harold Town Conservation Area"],
   ];
   // Create an info window to share between markers.
   var infoWindow = new google.maps.InfoWindow();
