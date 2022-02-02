@@ -22,8 +22,8 @@ function initMap() {
     const marker = new google.maps.Marker({
       position: [i][1],
       map,
-      title: i+"."+" " + [i][2],
-      label: i,
+      title: i+1+"."+" " + [i][2],
+      label: i+1,
       optimized: false,
     });
 
