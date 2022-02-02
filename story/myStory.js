@@ -22,9 +22,9 @@ function initMap() {
     var marker = new google.maps.Marker({
       map,
       animation: google.maps.Animation.DROP,
-      position,
-      title: `${m}. ${m}{3}`,
-      label: `${m}`,
+      position: [i][1-2],
+      title: [i][4],
+      label: [m],
       optimized: false,
     });
 
