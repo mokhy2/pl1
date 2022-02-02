@@ -18,7 +18,7 @@ function initMap() {
   const infoWindow = new google.maps.InfoWindow();
 
   // Create the markers.
-  for (i = 0, i <convAreas.length; i++; ) {
+  for (i = 0, i < convAreas.length; i++; ) {
     const marker = new google.maps.Marker({
       map,
       animation: google.maps.Animation.DROP,
