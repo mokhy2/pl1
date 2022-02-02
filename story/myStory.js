@@ -18,20 +18,10 @@ function initMap() {
   var infoWindow = new google.maps.InfoWindow();
 
   // // Create the markers.
-  // convAreas.forEach(([position, title], i) => {
-  //   const marker = new google.maps.Marker({
-  //     position,
-  //     map,
-  //     title: `${i + 1}. ${title}`,
-  //     label: `${i + 1}`,
-  //     optimized: false,
-  //   });
-
-  //   // Add a click listener for each marker, and set up the info window.
-  //   marker.addListener("click", () => {
-  //     infoWindow.close();
-  //     infoWindow.setContent(marker.getTitle());
-  //     infoWindow.open(marker.getMap(), marker);
-  //   });
-  // });
+  convAreas.map((location, i) => {
+    return new google.maps.Marker({
+      position: location,
+      label: labels[i % labels.length],
+    });
+  });
 }
