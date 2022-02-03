@@ -42,7 +42,7 @@ function initMap() {
 
   document.getElementById("addStoryLine").addEventListener("click", addStoryPath);
   document.getElementById("removeStoryLine").addEventListener("click", removeStoryPath);
-  addStoryLine();
+  addStoryPath();
 
   for (let i = 0; i < convAreas.length; i++) {
       timeMarkerFall(convAreas[i], i * 100);
