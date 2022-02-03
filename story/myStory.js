@@ -31,7 +31,7 @@ function initMap() {
           position: position,
           map,
           animation: google.maps.Animation.DROP,
-          label: labels[labelIndex++ % labels.length],
+          label: markerLabels[markerLabelIndex++ % markerLabels.length],
         })
       );
     }, timeout);
