@@ -1,5 +1,5 @@
 const convAreas = [
-  { lat: 43.8519712, lng: -78.9583349 },
+  { lat: 43.854852, lng: -78.966963 },
   { lat: 43.9392489, lng: -78.9811295 },
   { lat: 43.85359, lng: -78.898358 },
   { lat: 44.009224, lng: -79.070157 },
@@ -9,6 +9,10 @@ const convAreas = [
   { lat: 44.321988, lng: -78.261056 },
 ];
 let timedConvMarkers = [];
+
+const markerLabels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let markerLabelIndex = 0;
+
 
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -27,8 +31,10 @@ function initMap() {
           position: position,
           map,
           animation: google.maps.Animation.DROP,
+          label: labels[labelIndex++ % labels.length],
         })
       );
     }, timeout);
   }
+
 }
