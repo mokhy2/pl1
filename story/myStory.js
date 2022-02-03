@@ -35,8 +35,8 @@ function initMap() {
   storyLinePath = new google.maps.Polyline({
     path: storyLinePoints,
     strokeColor: "#1fe058",
-    strokeOpacity: 0.8,
-    strokeWeight: 1.5,
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
   });
 
   document.getElementById("addStoryLine").addEventListener("click", addStoryPath);
