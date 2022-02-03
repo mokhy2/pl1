@@ -9,7 +9,7 @@ const convAreas = [
   { lat: 44.321988, lng: -78.261056 },
 ];
 
-storyLinePoints = [
+const storyLinePoints = [
   { lat: 43.854852, lng: -78.966963 },
   { lat: 43.9392489, lng: -78.9811295 },
   { lat: 43.85359, lng: -78.898358 },
@@ -25,7 +25,6 @@ let storyLinePath;
 
 const markerLabels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let markerLabelIndex = 0;
-
 
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
