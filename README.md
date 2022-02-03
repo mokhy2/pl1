@@ -46,7 +46,7 @@ Google Maps is a pay-per-use service and requires a valid API Key to function. T
 
 ### Referral from FlemingGeom GitHub Classrooms (URL links from web pages). 
 
-A referral is the address of the web page where a someone clicked the link that sent them to the page (in this case the various Google API's). The repository URL works only with a specific GitHub Repository name to protect its usage. The URL must be exactly `https://[username].github.io/pl1/` followed by the directory and filename you want to see, where `[username]` is replaced with your actual GitHub account's username.
+A referral is the address of the web page where a someone clicked the link that sent them to the page (in this case the various Google API's). The repository URL works only with a specific GitHub Repository name to protect its usage. The URL must be exactly `https://mokhy2.github.io/pl1/` followed by the directory and filename you want to see, where `[username]` is replaced with your actual GitHub account's username.
 
 ### Whitelisted IP Address
 
