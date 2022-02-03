@@ -18,7 +18,7 @@ const storyLinePoints = [
   { lat: 43.9002, lng: -79.065092 },
   { lat: 44.297645, lng: -78.270045 },
   { lat: 44.321988, lng: -78.261056 },
-]
+];
 
 let timedConvMarkers = [];
 let storyLinePath;
