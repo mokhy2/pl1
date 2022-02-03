@@ -64,9 +64,9 @@ function initMap() {
 }
 
 function addStoryPath() {
-  flightPath.setMap(map);
+  storyLinePath.setMap(map);
 }
 
 function removeStoryPath() {
-  flightPath.setMap(null);
+  storyLinePath.setMap(null);
 }
