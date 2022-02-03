@@ -40,9 +40,9 @@ function initMap() {
     strokeWeight: 1.5,
   });
 
-  document.getElementById("add-line").addEventListener("click", addLine);
-  document.getElementById("remove-line").addEventListener("click", removeLine);
-  addLine();
+  document.getElementById("addStoryLine").addEventListener("click", addStoryPath);
+  document.getElementById("removeStoryLine").addEventListener("click", removeStoryPath);
+  addStoryLine();
 
   for (let i = 0; i < convAreas.length; i++) {
       timeMarkerFall(convAreas[i], i * 100);
